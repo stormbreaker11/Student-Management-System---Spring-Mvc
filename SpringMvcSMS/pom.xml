@@ -48,7 +48,11 @@
 			<version>${spring.version}</version>
 		</dependency>
 		
-
+<dependency>
+		<groupId>org.postgresql</groupId>
+		<artifactId>postgresql</artifactId>
+		<version>9.2-1004-jdbc3</version>
+	</dependency>
 		<!-- Hibernate Core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -98,8 +102,24 @@
     <artifactId>itextpdf</artifactId>
     <version>5.0.6</version>
 </dependency>
+<!-- API, java.xml.bind module -->
+<dependency>
+    <groupId>jakarta.xml.bind</groupId>
+    <artifactId>jakarta.xml.bind-api</artifactId>
+    <version>2.3.2</version>
+</dependency>
 
-
+<!-- Runtime, com.sun.xml.bind module -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>2.3.2</version>
+</dependency>
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.23.1-GA</version>
+</dependency>
  
 	<!-- 	<dependency>
 			<groupId>mysql</groupId>
